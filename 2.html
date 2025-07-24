@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皮卡学习网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.02);
+        }
+
+        .thumbnail {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .thumbnail video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fullscreen-video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .duration {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+
+        .title {
+            padding: 8px;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #ddd;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #333;
+        }
+
+        .nav-item {
+            color: #888;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+    </style>
+</head>
+<h1>图片</h1>
+<h3>推荐挂梯子观看</h3>
+<body>
+    <div class="container">
+        <div class="grid">
+       
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/vGhO/VID_20250723_234017_527.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:08</div>
+                </div>
+                <div class="title">ROYD-178 數年前欺負我的男子們又再次出現在面前…</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/7GHw/VID_20250723_234105_147.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:08</div>
+                </div>
+                <div class="title">STARS-145 永野一夏性愛覺醒沾滿汗水愛液濃密的粘稠性愛</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/AOtA/1-%E9%9B%85%E5%A9%B7%E5%B0%8F%E5%B8%88%E5%A6%B9%F0%9F%92%9D%E5%9C%A8%E6%8A%96%E9%9F%B3%E8%AE%B0%E5%BD%95%E7%BE%8E%E5%A5%BD%E7%94%9F%E6%B4%BB20250704_-_%E6%8A%96%E9%9F%B3.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:10</div>
+                </div>
+                <div class="title">雅婷小师妹</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/8vSm/f35f4d2f-4a35-4ce4-939d-5766d0b89235.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:14</div>
+                </div>
+                <div class="title">还得是爱莉希雅</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/96f2/VID_20250703_224243_526_426x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:40</div>
+                </div>
+                <div class="title">情侣开房</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/DOSL/Video_1753146474063_428x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">3:25</div>
+                </div>
+                <div class="title">极品美女女上位后坐</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/lmco/31128486126-1-192.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:16</div>
+                </div>
+                <div class="title">当阿轲化蝶，踏入这片雨夜</div>
+            </div>
+
+            <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/3qCe/VID_20250703_153908_951_240x304.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:03</div>
+                </div>
+                <div class="title">AI脱衣</div>
+            </div>
+        
+        
+                    <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/5oU3/2eb8fcb1e7ee44af949a3bc727e7dc4f_240x428.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">01:22</div>
+                </div>
+                <div class="title">极品后入视角</div>
+            </div>
+            
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/xLIJ/VID_20250717_234936_743_330x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">02:06</div>
+                </div>
+                <div class="title">汉服美女艾草</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/yAiJ/VID_20250718_000450_261_428x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">02:11</div>
+                </div>
+                <div class="title">第一视角夹大腿</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/J9Fm/VID_20250718_000838_417_240x428.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">01:46</div>
+                </div>
+                <div class="title">情侣后入</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/b2sZ/VID_20250717_235022_873_240x428.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">1:51</div>
+                </div>
+                <div class="title">大奶女生</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/gquE/VID_20250717_234821_605_428x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">10:11</div>
+                </div>
+                <div class="title">健身反差</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/pZhB/VID_20250706_002831_670_360x642.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:41</div>
+                </div>
+                <div class="title">艾草</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/eeHL/VID_20250717_234645_974_428x240.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">04:19</div>
+                </div>
+                <div class="title">紧紧冲冲</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/Z0t3/VID_20250703_224134_453_240x426.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:26</div>
+                </div>
+                <div class="title">极品女生傲叫</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/aNTw/VID_20250703_153850_660_240x320.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:04</div>
+                </div>
+                <div class="title">AI合成</div>
+            </div>
+            
+                        <div class="item">
+                <div class="thumbnail">
+                    <video muted loop preload="metadata">
+                        <source src="https://plc.372164885.xyz/f/Baf3/VID_20250703_153856_580_240x434.mp4" type="video/mp4">
+                        视频加载失败
+                    </video>
+                    <div class="duration">00:03</div>
+                </div>
+                <div class="title">喷奶</div>
+            </div>
+        
+    </div>
+
+    <!-- 全屏视频覆盖层 -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <button class="close-btn" id="closeBtn">×</button>
+        <video class="fullscreen-video" id="fullscreenVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item">☰</div>
+        <div class="nav-item">○</div>
+        <div class="nav-item">◁</div>
+    </div>
+
+    <script>
+        // 添加视频交互
+        const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+        const fullscreenVideo = document.getElementById('fullscreenVideo');
+        const closeBtn = document.getElementById('closeBtn');
+
+        document.querySelectorAll('.item').forEach(item => {
+            const video = item.querySelector('video');
+            
+            item.addEventListener('mouseenter', function() {
+                if (video) {
+                    video.play();
+                }
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            });
+            
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const videoSrc = video.querySelector('source').src;
+                
+                // 暂停所有缩略图视频
+                document.querySelectorAll('.thumbnail video').forEach(v => {
+                    v.pause();
+                });
+                
+                // 设置全屏视频源
+                fullscreenVideo.querySelector('source').src = videoSrc;
+                fullscreenVideo.load();
+                
+                // 显示全屏覆盖层
+                fullscreenOverlay.style.display = 'flex';
+                
+                // 播放全屏视频
+                fullscreenVideo.play();
+                
+                console.log('播放全屏视频:', this.querySelector('.title').textContent);
+            });
+        });
+
+        // 关闭全屏视频
+        function closeFullscreen() {
+            fullscreenOverlay.style.display = 'none';
+            fullscreenVideo.pause();
+            fullscreenVideo.currentTime = 0;
+        }
+
+        // 点击关闭按钮
+        closeBtn.addEventListener('click', closeFullscreen);
+
+        // 点击覆盖层背景关闭
+        fullscreenOverlay.addEventListener('click', function(e) {
+            if (e.target === fullscreenOverlay) {
+                closeFullscreen();
+            }
+        });
+
+        // ESC键关闭全屏
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && fullscreenOverlay.style.display === 'flex') {
+                closeFullscreen();
+            }
+        });
+
+        // 底部导航点击事件
+        document.querySelectorAll('.nav-item').forEach(nav => {
+            nav.addEventListener('click', function() {
+                console.log('点击了导航');
+            });
+        });
+    </script>
+</body>
+</html>
